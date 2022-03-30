@@ -331,3 +331,46 @@ a {
     font-family: 'Poppins', sans-serif;
 }
 /* End Home */
+
+/* About */
+#about {
+    background-image: url(./img/Background_files/2632464.jpg); 
+	background-position: top center;
+    background-size: cover;
+	position: relative;
+    z-index: 1;
+    min-height: 70vh;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#about::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(48, 45, 45);
+	opacity: 0.98;
+	z-index: -1;
+}
+
+#about .container {
+	min-height: 10vh;
+	width: 100%;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    color: #fff;
+}
+
+#about .aboit {
+    display: block;
+    box-sizing: border-box;
+    padding: 0 300px;
+    position: absolute;
+}
+/* End About */
