@@ -37,6 +37,7 @@ a {
 }
 
 .brand h1 span {
+    padding: 0 10px;
 	font-size: 1.5rem;
 	font-family: 'Poppins', sans-serif;
 	color: rgb(236, 236, 67);
@@ -224,3 +225,109 @@ a {
 	}
 }
 /* End Header */
+
+/* Home */
+#home {
+    background-image: url(./img/Background_files/1761203.jpg); 
+	background-position: top center;
+    background-size: cover;
+	position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#home::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+#home .container {
+	min-height: 100vh;
+	width: 100%;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    top: -50px;
+    position: absolute;
+}
+
+#home .hime {
+    display: block;
+    box-sizing: border-box;
+}
+
+#home .hime h2 {
+    text-align: center;
+    position: relative;
+    top: 3px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+}
+
+#home h3 {
+	text-align: center;
+	align-items: center;
+	display: flex;
+	width: fit-content;
+	color: rgba(255, 255, 255, 0.973);
+    top: 630px;
+    margin: 0;
+    font-size: 23px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+}
+
+#home .hime p {
+    text-align: center;
+    position: relative;
+    top: -14px;
+    font-family: 'Poppins', sans-serif;
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+.btn {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 25px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	color: black;
+	background-color: rgb(235, 231, 231);
+	border: none;
+    top: 559px;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+	outline: none;
+    font-size: 12px;
+}
+
+.btn:hover {
+	box-shadow: 0px 10px 15px gray;    
+	color: black;
+    font-family: 'Poppins', sans-serif;
+}
+/* End Home */
