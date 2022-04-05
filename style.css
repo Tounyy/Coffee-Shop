@@ -405,6 +405,19 @@ a {
 }
 /* End About */
 
+/* Line */
+#line {
+	background: rgb(36, 35, 35);
+	position: relative;
+    z-index: 1;
+    min-height: 0.4vh;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* End Line */
+
 /* Gallery */
 .image-gallery {
 	width: 100%;
@@ -557,7 +570,7 @@ a {
 	display: inline-block;
 	position: relative;
 	color: rgb(236, 236, 67);
-	font-size: 4vw;
+	font-size: 3.4vw;
 	padding: 60px;
 	width: 100%;
 	text-align: center;
@@ -577,7 +590,7 @@ a {
 
 #reviews .heading b {
 	color: #fff;
-	font-size: 4vw;
+	font-size: 3.4vw;
 }
 
 .wrapper {
@@ -661,5 +674,140 @@ a {
 	display: block;
 	text-align: right;
 	color: rgb(236, 236, 67);
+}
+/* End Reviews */
+
+/* Reviews */
+#contact {
+	background-image: url(img/Background_files/2632569.jpg); 
+	background-position: top center;
+    background-size: cover;
+	position: relative;
+	min-height: 80vh;
+	width: 100%;
+	overflow: hidden;
+	font-family: 'Poppins', sans-serif;
+	z-index: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+#contact::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.93;
+	z-index: -1;
+}
+
+#contact .heading {
+	display: inline-block;
+	position: relative;
+	color: rgb(236, 236, 67);
+	font-size: 3.5vw;
+	padding: 60px;
+	width: 100%;
+	text-align: center;
+	font-weight: 800;
+}
+
+#contact .heading:before{
+	position: absolute;
+	content: '';
+	width: 13%;
+	height: 7px;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 25%;
+	background: #222222;
+}
+
+.vrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.vrapper .container {
+	position: relative;
+	width: 350px;
+	color: #fff;
+	background: #222222;
+	margin: 40px 10px;
+	padding: 30px 20px;
+	border-radius: 3px;
+	transition: 0.3s ease;
+}
+
+.vrapper .container .profile {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -10%;
+	width: 100%;
+	display: block;
+}
+
+.vrapper .container .profile .imgBox {
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	border: 8px solid gray;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.vrapper .container .profile .imgBox img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+
+.vrapper .container .profile .imgBox:hover img {
+	filter: saturate(140%);
+	transform: translate(0.20);
+}
+
+.vrapper .container .profile h2 {
+	padding: 5px 0;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.vrapper .container p {
+	margin-top: 50px;
+	color: rgb(199, 209, 60);
+	padding: 0 8px;
+	font-size: 20px;
+	opacity: 0.8;
+}
+
+.vrapper .container a {
+	margin-top: 50px;
+	color: #fff;
+	padding: 0 8px;
+	font-size: 15px;
+	opacity: 1;
+}
+
+#contact .vrapper .container span {
+	margin-top: 50px;
+	color: #fff;
+	padding: 0 8px;
+	font-size: 15px;
+	opacity: 1;
 }
 /* End Reviews */
