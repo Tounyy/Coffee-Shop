@@ -15,6 +15,10 @@ a {
 	text-decoration: none;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* Header */
 #header {
 	position: fixed;
@@ -246,6 +250,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 }
 
 #home::after {
@@ -278,10 +283,10 @@ a {
 #home .hime h2 {
     text-align: center;
     position: relative;
-    top: 3px;
+    top: 2px;
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 
 #home h3 {
@@ -303,12 +308,38 @@ a {
 #home .hime p {
     text-align: center;
     position: relative;
-    top: -14px;
+    top: 14.2px;
     font-family: 'Poppins', sans-serif;
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 	color: #fff;
+	left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
+.btn {
+	color: #e8e8e8;
+    padding: 15px 50px;
+    border-top: 1px solid #f0d43a;
+    border-bottom: 1px solid #f0d43a;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	position: absolute;
+	top: 60%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover {
+    font-family: 'Poppins', sans-serif;
+	background: #f0d43a;
+	color: black;
+	transition: all 0.7s ease;
+}
+
+/*
 .btn {
     margin: 0;
     position: absolute;
@@ -407,10 +438,10 @@ a {
 
 /* Line */
 #line {
-	background: rgb(36, 35, 35);
+	background: rgb(27, 27, 27);
 	position: relative;
     z-index: 1;
-    min-height: 0.4vh;
+    min-height: 0.3vh;
     width: 100%;
 	display: flex;
 	align-items: center;
@@ -570,7 +601,7 @@ a {
 	display: inline-block;
 	position: relative;
 	color: rgb(236, 236, 67);
-	font-size: 3.4vw;
+	font-size: 4vw;
 	padding: 60px;
 	width: 100%;
 	text-align: center;
@@ -590,7 +621,7 @@ a {
 
 #reviews .heading b {
 	color: #fff;
-	font-size: 3.4vw;
+	font-size: 4vw;
 }
 
 .wrapper {
@@ -683,7 +714,7 @@ a {
 	background-position: top center;
     background-size: cover;
 	position: relative;
-	min-height: 80vh;
+	min-height: 70vh;
 	width: 100%;
 	overflow: hidden;
 	font-family: 'Poppins', sans-serif;
@@ -708,11 +739,11 @@ a {
 	display: inline-block;
 	position: relative;
 	color: rgb(236, 236, 67);
-	font-size: 3.5vw;
+	font-size: 4vw;
 	padding: 60px;
 	width: 100%;
 	text-align: center;
-	font-weight: 800;
+	font-weight: 500;
 }
 
 #contact .heading:before{
@@ -736,13 +767,14 @@ a {
 
 .vrapper .container {
 	position: relative;
-	width: 350px;
+	width: 300px;
 	color: #fff;
 	background: #222222;
 	margin: 40px 10px;
 	padding: 30px 20px;
 	border-radius: 3px;
 	transition: 0.3s ease;
+	bottom: 25px;
 }
 
 .vrapper .container .profile {
@@ -811,3 +843,7 @@ a {
 	opacity: 1;
 }
 /* End Reviews */
+
+/* Menu */
+
+/* End Menu */ 
