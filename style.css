@@ -568,10 +568,10 @@ html {
 
 /* Line */
 #line {
-	background: rgb(27, 27, 27);
+	background: rgb(218, 203, 70);
 	position: relative;
     z-index: 1;
-    min-height: 0.3vh;
+    min-height: 0.2vh;
     width: 100%;
 	display: flex;
 	align-items: center;
@@ -581,7 +581,7 @@ html {
 
 /* Gallery */
 #gallery {
-    background-image: url(./img/Background_files/2632608.jpg); 
+    background-image: url(./img/Background_files/2632608.jpg);
 	background-position: top center;
     background-size: cover;
 	position: relative;
@@ -1097,9 +1097,10 @@ html {
 	height: 100px;
 	width: 100px;
 	margin: auto;
-	border: 8px solid gray;
+	border: 4px solid rgb(148, 141, 141);
 	overflow: hidden;
 	position: relative;
+	border-radius: 5px 5px 5px 5px;
 	right: 175px;
 	top: 38px;
 }
@@ -1126,11 +1127,79 @@ html {
 	text-align: center;
 	position: relative;
 	bottom: 55px;
-	right: 10px;
+	right: 9px;
+}
+
+.lrapper .container .coffee-info h3 {
+	padding: 5px 0;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	text-align: center;
+	position: relative;
+	bottom: 55px;
+	right: 12px;
+}
+
+.lrapper .container .coffee-info h4 {
+	padding: 5px 0;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	text-align: center;
+	position: relative;
+	bottom: 55px;
+	right: 17px;
+}
+
+.lrapper .container .coffee-info h5 {
+	padding: 5px 0;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	text-align: center;
+	position: relative;
+	bottom: 55px;
+	right: 15px;
+}
+
+.lrapper .container .coffee-info h6 {
+	padding: 5px 0;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	text-align: center;
+	position: relative;
+	bottom: 55px;
+	right: 27px;
 }
 
 .lrapper .container .coffee-info span {
-	left: 110px;
+	left: 109px;
+	position: relative;
+	color: rgb(156, 167, 15);
+}
+
+.lrapper .container .coffee-info .co-2{
+	left: 114px;
+	position: relative;
+	color: rgb(156, 167, 15);
+}
+
+.lrapper .container .coffee-info .co-3{
+	left: 126.2px;
+	position: relative;
+	color: rgb(156, 167, 15);
+}
+
+.lrapper .container .coffee-info .co-4{
+	left: 121px;
+	position: relative;
+	color: rgb(156, 167, 15);
+}
+
+.lrapper .container .coffee-info .co-5{
+	left: 145px;
 	position: relative;
 	color: rgb(156, 167, 15);
 }
@@ -1142,6 +1211,22 @@ html {
 	padding: 0 8px;
 	font-size: 15px;
 	opacity: 0.8;
+}
+
+@media all and (max-width: 550px) and (min-width: 0px) {
+	.lrapper .container {
+		position: relative;
+		width: 1000px;
+		color: #fff;
+		background: rgb(29, 28, 28);
+		margin: 40px 10px;
+		padding: 30px 20px;
+		border-radius: 3px;
+		transition: 0.3s ease;
+		border: 2px solid black;
+		border-radius: 25px 25px 25px 25px;
+		height: 350px;
+	}
 }
 /* End Menu */ 
 
